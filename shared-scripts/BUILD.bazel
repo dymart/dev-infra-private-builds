@@ -1,0 +1,9 @@
+package(default_visibility = ["//visibility:public"])
+
+filegroup(
+    name = "static_files",
+    srcs = glob(["*"]) + [
+        "@npm//@angular/dev-infra-private/shared-scripts/angular-linker:static_files",
+        "@npm//@angular/dev-infra-private/shared-scripts/angular-optimization:static_files",
+    ],
+)
