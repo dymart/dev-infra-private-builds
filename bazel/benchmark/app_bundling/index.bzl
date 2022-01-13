@@ -6,8 +6,8 @@
 load("@build_bazel_rules_nodejs//:index.bzl", "npm_package_bin")
 load("@npm//@bazel/terser:index.bzl", "terser_minified")
 load("@npm//prettier:index.bzl", "prettier")
-load("@dev-infra@npm//@angular/dev-infra-private/bazel/esbuild:index.bzl", "esbuild", "esbuild_config")
-load("@dev-infra@npm//@angular/dev-infra-private/bazel:expand_template.bzl", "expand_template")
+load("@npm//@angular/dev-infra-private/bazel/esbuild:index.bzl", "esbuild", "esbuild_config")
+load("@npm//@angular/dev-infra-private/bazel:expand_template.bzl", "expand_template")
 
 def _create_esbuild_minify_options(debug = False):
     # The minify options match with the configuration used by the CLI. The whitespace

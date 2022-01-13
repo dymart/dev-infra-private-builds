@@ -1,5 +1,5 @@
 load("@npm//@bazel/esbuild:index.bzl", _esbuild = "esbuild", _esbuild_config = "esbuild_config")
-load("@dev-infra@npm//@angular/dev-infra-private/bazel:expand_template.bzl", "expand_template")
+load("@npm//@angular/dev-infra-private/bazel:expand_template.bzl", "expand_template")
 
 # Re-export of the actual esbuild definitions.
 esbuild_config = _esbuild_config

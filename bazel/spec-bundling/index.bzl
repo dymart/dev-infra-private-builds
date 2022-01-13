@@ -1,7 +1,7 @@
 load("@build_bazel_rules_nodejs//:index.bzl", "js_library")
-load("@dev-infra@npm//@angular/dev-infra-private/bazel/esbuild:index.bzl", "esbuild", "esbuild_amd", "esbuild_config")
-load("@dev-infra@npm//@angular/dev-infra-private/bazel/spec-bundling:spec-entrypoint.bzl", "spec_entrypoint")
-load("@dev-infra@npm//@angular/dev-infra-private/bazel/spec-bundling:bundle-config.bzl", "spec_bundle_config_file")
+load("@npm//@angular/dev-infra-private/bazel/esbuild:index.bzl", "esbuild", "esbuild_amd", "esbuild_config")
+load("@npm//@angular/dev-infra-private/bazel/spec-bundling:spec-entrypoint.bzl", "spec_entrypoint")
+load("@npm//@angular/dev-infra-private/bazel/spec-bundling:bundle-config.bzl", "spec_bundle_config_file")
 
 """
   Starlark file exposing a macro for bundling Bazel targets with spec files into
