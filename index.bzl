@@ -2,16 +2,8 @@
 #
 # Use of this source code is governed by an MIT-style license that can be
 # found in the LICENSE file at https://angular.io/license
-""" Public API surface is re-exported here.
 
-Users should not load files under "/src"
-"""
-
-load("//@angular/bazel/src/ng_package:ng_package.bzl", _ng_package = "ng_package_macro")
-load("//@angular/bazel/src/ng_module:ng_module.bzl", _ng_module = "ng_module_macro")
-
-ng_module = _ng_module
-ng_package = _ng_package
-
-# DO NOT ADD PUBLIC API without including in the documentation generation
-# Run `yarn bazel build //@angular/bazel/docs` to verify
+# File is currently empty but serves as indicator for `rules_nodejs` and instructs it to
+# preserve the content output in the NPM install workspace. This allows consumers to use
+# rules and targets from within Bazel. e.g. by using `@npm//@angular/dev-infra-private/<..>`.
+# See: https://github.com/bazelbuild/rules_nodejs/commit/4f508b1a0be1f5444e9c13b0439e649449792fef.
